@@ -1,13 +1,3 @@
-terraform {
-  backend "remote" {
-    organization = "prisma_poc"
-
-    workspaces {
-      name = "prisma-cloud-devsecops-workshop"
-    }
-  }
-}
-
 provider "aws" {
   region = "us-west-2"
 }
